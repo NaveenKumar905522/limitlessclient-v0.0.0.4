@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Limitless Client</title>
+  <desc id="desc">A neon single-player Minecraft mod studio preview.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b14"/>
+      <stop offset="0.55" stop-color="#101a33"/>
+      <stop offset="1" stop-color="#08141c"/>
+    </linearGradient>
+    <radialGradient id="mint" cx="0.18" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#78f2c4" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#78f2c4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blue" cx="0.92" cy="0.18" r="0.65">
+      <stop offset="0" stop-color="#7da2ff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#7da2ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#dbe6ff" stroke-opacity="0.08"/>
+    </pattern>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#mint)"/>
+  <rect width="1200" height="630" fill="url(#blue)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1030" cy="110" r="180" fill="#7da2ff" fill-opacity="0.16" filter="url(#glow)"/>
+  <circle cx="190" cy="530" r="150" fill="#78f2c4" fill-opacity="0.12" filter="url(#glow)"/>
+  <rect x="78" y="76" width="1044" height="478" rx="34" fill="#0d1322" fill-opacity="0.72" stroke="#97b1ff" stroke-opacity="0.25"/>
+  <rect x="110" y="110" width="8" height="90" rx="4" fill="#78f2c4"/>
+  <text x="148" y="138" fill="#78f2c4" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="5">SINGLE-PLAYER MOD STUDIO</text>
+  <text x="148" y="238" fill="#ecf2ff" font-family="Arial, sans-serif" font-size="74" font-weight="800">LIMITLESS</text>
+  <text x="148" y="315" fill="#ecf2ff" font-family="Arial, sans-serif" font-size="74" font-weight="800">CLIENT</text>
+  <text x="152" y="370" fill="#b8c4dd" font-family="Arial, sans-serif" font-size="24">Fabric 26.1.2  /  Java Edition  /  Local testing</text>
+  <g transform="translate(770 170)">
+    <rect width="270" height="230" rx="24" fill="#121d35" fill-opacity="0.86" stroke="#78f2c4" stroke-opacity="0.35"/>
+    <text x="28" y="44" fill="#78f2c4" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">MODULE HUD</text>
+    <text x="28" y="91" fill="#ecf2ff" font-family="Arial, sans-serif" font-size="21" font-weight="700">RSHIFT MENU</text>
+    <text x="28" y="132" fill="#b8c4dd" font-family="Arial, sans-serif" font-size="17">HUD              ON</text>
+    <text x="28" y="162" fill="#b8c4dd" font-family="Arial, sans-serif" font-size="17">SPEED            ON</text>
+    <text x="28" y="192" fill="#b8c4dd" font-family="Arial, sans-serif" font-size="17">FLY              OFF</text>
+  </g>
+  <text x="152" y="492" fill="#78f2c4" font-family="Arial, sans-serif" font-size="18" font-weight="700">BUILT FOR PRIVATE WORLDS AND ENTERTAINMENT TESTING</text>
+</svg>

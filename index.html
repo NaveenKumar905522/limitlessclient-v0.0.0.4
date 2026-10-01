@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limitless Client | Local Practice Update</title>
+  <meta name="description" content="Limitless Client is a collaborative single-player Minecraft mod studio with release browsing, privacy controls, and installation guidance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Limitless Client | Local Practice Update" />
+  <meta property="og:description" content="Explore the Limitless Client mod, browse releases, and download the Fabric 26.1.2 build." />
+  <meta property="og:image" content="meta-preview.svg" />
+  <meta property="og:image:alt" content="Limitless Client neon single-player mod studio preview" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Limitless Client | Single-Player Mod Studio" />
+  <meta name="twitter:description" content="A local-first Fabric mod studio for single-player testing." />
+  <meta name="twitter:image" content="meta-preview.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero__copy">
+        <div class="eyebrow">Single-player mod platform</div>
+        <h1>Build, test, and tune your single-player client.</h1>
+        <p class="lead">
+          A focused mod studio for private worlds, offline experiments, and entertainment testing.
+          Multiplayer use is outside the project scope.
+        </p>
+
+        <div class="primary-actions">
+          <button class="btn btn--primary" id="openDownload">Download Client</button>
+          <button class="btn btn--ghost" id="openStudio">Open Mod Studio</button>
+        </div>
+
+        <div class="meta-row">
+          <div class="meta-card">
+            <span>Version</span>
+            <strong>26.1.2</strong>
+          </div>
+          <div class="meta-card">
+            <span>Loader</span>
+            <strong>Fabric</strong>
+          </div>
+          <div class="meta-card">
+            <span>Edition</span>
+            <strong>Java</strong>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__panel glass">
+        <div class="panel-top">
+          <div>
+            <span class="panel-label">Current build</span>
+            <h2>Limitless Client</h2>
+          </div>
+          <span class="status-pill">Verified build</span>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <div>
+            <strong>Mod blueprint studio</strong>
+            <p>Turn an idea into a structured feature blueprint in your browser.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">⬣</span>
+            <div>
+              <strong>Single-player boundary</strong>
+              <p>Designed for local worlds and private testing, never competitive multiplayer.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">⟡</span>
+            <div>
+              <strong>Transparent release flow</strong>
+              <p>Compatibility, license, privacy choices, and safety guidance are shown before download.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="studio glass" id="studio">
+      <div class="section-head">
+        <div>
+          <span class="panel-label">Mod Studio</span>
+          <h2>Create a mod concept</h2>
+        </div>
+        <p>Describe what you want, then generate a structured single-player blueprint locally in your browser. This demo does not call an AI service or build JARs from prompts.</p>
+      </div>
+
+      <div class="studio-grid">
+        <div class="studio-card">
+          <label for="idea">Describe your mod</label>
+          <textarea id="idea" rows="6" placeholder="Example: a private-world HUD with movement practice controls and performance toggles"></textarea>
+          <div class="studio-actions">
+            <button class="btn btn--primary" id="generateMod">Generate Mod Blueprint</button>
+            <button class="btn btn--ghost" id="clearIdea">Clear</button>
+          </div>
+        </div>
+
+        <div class="studio-card result-card">
+          <label>Generated blueprint</label>
+          <div id="modResult" class="result-box">
+            <h3>Awaiting your prompt</h3>
+            <p>Your mod concept, features, and package name will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section glass" id="features">
+      <div class="section-head">
+        <div>
+          <span class="panel-label">Inside the mod</span>
+          <h2>Module features</h2>
+        </div>
+        <p>Open the client menu with Right Shift to view and control the available local practice modules.</p>
+      </div>
+
+      <div class="feature-cards">
+        <article class="feature-card">
+          <span class="feature-card__number">01</span>
+          <h3>Right Shift menu</h3>
+          <p>Opens the in-game Limitless module screen with clear ON/OFF controls.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">02</span>
+          <h3>Custom HUD</h3>
+          <p>Toggle coordinates, FPS, and session time, then cycle between four accent themes.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">03</span>
+          <h3>Speed practice</h3>
+          <p>Applies a small local movement boost while grounded in a single-player world.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">04</span>
+          <h3>Flight practice</h3>
+          <p>Enables local flight controls for testing and building in your own world.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">05</span>
+          <h3>Hold-to-zoom</h3>
+          <p>Hold C to zoom in locally; choose 30, 20, or 12 FOV from the module menu.</p>
+        </article>
+        <article class="feature-card feature-card--accent">
+          <span class="feature-card__number">06</span>
+          <h3>Fullbright</h3>
+          <p>Toggle local gamma for visibility in your own world; the previous setting is restored when disabled.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">07</span>
+          <h3>Auto sprint</h3>
+          <p>Automatically sprints while moving forward in a single-player world.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-card__number">08</span>
+          <h3>Custom controls</h3>
+          <p>Use Right Shift for modules and change HUD theme, zoom level, and individual overlays in-game.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="collab-section glass" id="collab">
+      <div class="section-head">
+        <div>
+          <span class="panel-label">Built together</span>
+          <h2>Collab network</h2>
+        </div>
+        <p>Limitless Client is shaped by a four-member collaboration focused on creative single-player testing.</p>
+      </div>
+      <div class="collab-grid">
+        <article class="collab-card"><span class="collab-card__mark">NR</span><div><h3>Naman Raj</h3><p>Project collaborator</p></div></article>
+        <article class="collab-card"><span class="collab-card__mark">ZC</span><div><h3>Zen!CC</h3><p>Project collaborator</p></div></article>
+        <article class="collab-card"><span class="collab-card__mark">R2</span><div><h3>Raizen2.0XT</h3><p>Project collaborator</p></div></article>
+        <article class="collab-card"><span class="collab-card__mark">VS</span><div><h3>VN Sensei</h3><p>Project collaborator</p></div></article>
+      </div>
+    </section>
+
+    <section class="download-page glass hidden" id="downloadPage" aria-hidden="true">
+      <div class="section-head">
+        <div>
+          <span class="panel-label">Download flow</span>
+          <h2>Limitless Client release</h2>
+        </div>
+        <p>Review the locked configuration and responsible-use terms before downloading the verified client build.</p>
+      </div>
+
+      <div class="release-browser">
+        <div class="release-browser__head">
+          <div>
+            <span class="panel-label">Release browser</span>
+            <h3>Choose a file</h3>
+          </div>
+          <span class="release-count" id="releaseCount">4 releases</span>
+        </div>
+        <div class="release-filters" aria-label="Release filters">
+          <label>Loader<select id="loaderFilter"><option value="Fabric">Fabric</option></select></label>
+          <label>Game version<select id="versionFilter"><option value="26.1.2">26.1.2</option></select></label>
+          <label>Edition<select id="editionFilter"><option value="Java">Java</option></select></label>
+        </div>
+        <div class="release-list" id="releaseList"></div>
+      </div>
+
+      <div class="download-layout">
+        <div class="download-info">
+          <div class="info-card">
+            <span>Build name</span>
+            <strong>Limitless Client</strong>
+          </div>
+          <div class="info-card">
+            <span>Supported version</span>
+            <strong>26.1.2</strong>
+          </div>
+          <div class="info-card">
+            <span>Loader</span>
+            <strong>Fabric</strong>
+          </div>
+          <div class="info-card">
+            <span>Edition</span>
+            <strong>Java</strong>
+          </div>
+        </div>
+
+        <article class="download-copy">
+          <h3>About this client</h3>
+          <p>
+            Limitless Client is intended for single-player worlds, local testing, and entertainment.
+            It must not be used to gain an unfair advantage in multiplayer servers or to bypass server rules.
+          </p>
+          <div class="release-warning">
+            <strong>Local Practice Update</strong>
+            <span>Compiled for Fabric on Minecraft 26.1.2 with Java 25 or newer.</span>
+          </div>
+          <div class="download-cta">
+            <button class="btn btn--primary btn--wide" id="downloadJar">Download .jar</button>
+            <button class="btn btn--ghost btn--wide" id="showSteps">Show install steps</button>
+          </div>
+          <div class="download-status hidden" id="downloadStatus" role="status" aria-live="polite">
+            <strong>Download started</strong>
+            <span>Your JAR should appear in your browser's downloads. Follow the install steps below.</span>
+          </div>
+          <p class="fine-print">
+            Selected package: <strong id="selectedPackage">my mods/Limitless Client 26.1.2-v0.0.0.4.jar</strong>. Use only in single-player or explicitly authorized private testing.
+          </p>
+        </article>
+      </div>
+
+      <div class="steps-panel hidden" id="stepsPanel">
+        <h3>How to add it</h3>
+        <ol>
+            <li>Confirm the mod and Fabric loader match the exact Minecraft version.</li>
+          <li>Place the downloaded `.jar` file into that folder.</li>
+            <li>Launch Minecraft with the matching Fabric profile on Java Edition.</li>
+          <li>Verify the mod appears in the in-game mod list.</li>
+        </ol>
+        <a class="discord-card" href="https://discord.gg/bUYqz2Snk" target="_blank" rel="noopener noreferrer">
+          <span class="discord-card__icon">DS</span>
+          <span><strong>Join Discord for updates</strong><small>Get release notes, support, and future build announcements.</small></span>
+          <span class="discord-card__arrow">-&gt;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="policy-grid" id="guidelines">
+      <article class="policy-card glass">
+        <span class="panel-label">Usage guidelines</span>
+        <h2>Keep testing fair and local</h2>
+        <ul class="guideline-list">
+          <li>Use only in single-player worlds, LAN worlds you own, or private test environments where every participant agrees.</li>
+          <li>Do not use on public servers, ranked play, or any world where it could affect another player without consent.</li>
+          <li>Back up worlds before testing. Experimental features can cause bugs, crashes, or corrupted saves.</li>
+          <li>Read a server's rules before connecting. Disable or remove the mod when joining multiplayer.</li>
+          <li>Do not redistribute modified builds that hide behavior, collect credentials, or evade moderation tools.</li>
+        </ul>
+      </article>
+
+      <article class="policy-card glass" id="privacy">
+        <span class="panel-label">Privacy controls</span>
+        <h2>Choose what stays local</h2>
+        <p class="policy-copy">This front-end demo stores settings in your browser only. No account or telemetry service is connected.</p>
+        <label class="toggle-row">
+          <span><strong>Local preferences</strong><small>Remember your consent and interface choices on this device.</small></span>
+          <input type="checkbox" id="localPreferences" checked />
+        </label>
+        <label class="toggle-row">
+          <span><strong>Anonymous diagnostics</strong><small>Keep disabled unless you later connect your own analytics service.</small></span>
+          <input type="checkbox" id="diagnostics" />
+        </label>
+        <button class="btn btn--ghost" id="clearPrivacy">Clear saved settings</button>
+      </article>
+
+      <article class="policy-card glass license-card" id="license">
+        <span class="panel-label">Entertainment testing license</span>
+        <h2>Use at your own risk</h2>
+        <p class="policy-copy">This project is provided for personal, educational, and entertainment testing. It is not affiliated with Mojang or Microsoft.</p>
+        <p class="policy-copy">The software is provided "as is", without a promise of compatibility, safety, uptime, or save integrity. You are responsible for backups, local rules, and any consequences of using it.</p>
+        <p class="policy-copy">You may inspect and modify the project for private testing. Do not redistribute it as an official Mojang product or use it to violate a server's rules.</p>
+      </article>
+    </section>
+
+    <section class="consent-bar glass" aria-labelledby="consentTitle">
+      <div>
+        <span class="panel-label">Before any release download</span>
+        <h2 id="consentTitle">Confirm responsible use</h2>
+        <p>I understand this project is for single-player or explicitly authorized private testing, and I will back up my worlds.</p>
+      </div>
+      <label class="consent-check"><input type="checkbox" id="acceptGuidelines" /> <span>I accept the guidelines and license</span></label>
+    </section>
+
+    <section class="credits glass" id="credits">
+      <span class="panel-label">Credits</span>
+      <h2>Special thanks</h2>
+      <p>With appreciation to Codex, Gemini, MCreator, and the Fabric modding community.</p>
+      <div class="credit-tags" aria-label="Project credits">
+        <span>Codex</span>
+        <span>Gemini</span>
+        <span>MCreator</span>
+        <span>Fabric modders</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Made by <strong>LimitlessDark</strong></span>
+    <a href="https://discord.gg/bUYqz2Snk" target="_blank" rel="noopener noreferrer">Discord updates</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
